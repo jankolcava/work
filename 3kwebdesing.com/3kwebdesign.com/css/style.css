@@ -1,0 +1,493 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../css/opensans.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../css/opensans-light.ttf');
+}
+
+@font-face {
+    font-family: 'Xolonium';
+    src: url('../css/xolonium.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Open Sans', Arial, sans-serif;
+    font-smoothing:antialiased;
+}
+
+header#header{
+    background: black url('../design/images/background.jpg') no-repeat;
+    background-size: cover;
+    background-position-y: 50%; 
+    width: 100%;
+    position: relative;
+}
+
+header#header .cover{
+    background: rgba(0, 0, 0, 0.70);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header#header .cover .logo{
+    float: left;
+    color: white;
+    margin-left: 1em;
+    margin-top: 1em; 
+}
+
+header#header .cover .logo h1{
+    font-family: 'Xolonium';
+    font-weight: normal;
+}
+
+.underline{
+    border: 1px solid white;
+    padding: 8px;
+}
+
+header#header .cover .menu{
+    float: right;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+header#header .cover .menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+header#header .cover .quote{
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+    margin-top: 2em;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+header#header .cover .quote h2{
+    color: white;
+    font-weight: normal;
+}
+
+#home-page {
+    display: block;
+}
+
+#krul-page {
+    display: none;
+}
+
+#kolcava-page {
+    display: none;
+}
+
+#konecny-page {
+    display: none;
+}
+
+.floating-page
+{
+    position: absolute;
+    width: 100%;
+}
+
+
+.floating-page .inner .back-button {
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    color: #003366;
+    transition: color 0.4s;
+}
+
+.floating-page .inner .back-button:hover{
+    color: #480066;
+}
+
+.floating-page .inner{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+.floating-page .inner h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5em;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+    border-bottom: 1px solid gray;
+}
+
+.floating-page .inner .center{
+    font-size: 1.3em;
+    margin: 1em;
+}
+
+.floating-page .inner .center h3{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#bottomAll{
+    width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#bottomAll .circleBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bottomAll .circleBox .circle{
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    margin-top: 2em;
+    box-shadow: 0px 0px 21px 0px black;
+    cursor: pointer;
+}
+
+#bottomAll .circleBox .circle .cover{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    display: table;
+
+    -webkit-transition: background 500ms linear;
+    -moz-transition: background 500ms linear;
+    -o-transition: background 500ms linear;
+    -ms-transition: background 500ms linear;
+    transition: background 500ms linear;
+}
+
+#bottomAll .circleBox .circle .cover:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#bottomAll .circleBox .circle .cover h2{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+article#mainPage{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+article#mainPage h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.5em;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+    border-bottom: 1px solid gray;
+}
+
+article#mainPage .center{
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+article#mainPage .reference{
+    width: 95%;
+    padding-top: 2em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article#mainPage .reference .item{
+    padding-bottom: 1.5em;
+    max-width: 48%;
+    margin: 0 auto;
+    position: relative;
+}
+
+article#mainPage .reference .item img{
+    width: 100%;
+    box-shadow: 0px 0px 23px 3px rgba(0,0,0,0.75);
+}
+
+article#mainPage .reference .item .info{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90%;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+article#mainPage .reference .item .info::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    background: rgba(255, 255, 255, 0.7);
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) -50%, transparent);
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.7) -50%, transparent);
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.7) -50%, transparent);
+    background: linear-gradient(rgba(255, 255, 255, 0.7) -50%, transparent);
+
+    -webkit-transition: opacity 500ms linear;
+    -moz-transition: opacity 500ms linear;
+    -o-transition: opacity 500ms linear;
+    -ms-transition: opacity 500ms linear;
+    transition: opacity 500ms linear;
+}
+
+article#mainPage .reference .item .info:hover::before {
+   opacity: 1;
+}
+
+article#mainPage .reference .item .info .inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+article#mainPage .reference .item .info .inner .table{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+article#mainPage .reference .item .info .inner .table .top{
+    display: table-row;
+}
+
+article#mainPage .reference .item .info .inner .table .bottom{
+    display: table-row;
+}
+
+article#mainPage .reference .item .info .inner .table .top h3{
+    color: inherit;
+    text-align: center;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+    vertical-align: bottom;
+    display: table-cell;
+    font-size: 1.5em;
+}
+
+article#mainPage .reference .item .info .inner .table .bottom a{
+    color: inherit;
+    display: table-cell;
+    text-align: center;
+    transition: font-size 0.4s;
+    font-size: 1.5em;
+}
+
+article#mainPage .reference .item .info .inner .table .bottom a:hover{
+    font-size: 2em;
+}
+
+article#mainPage .categories{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+article#mainPage .categories .item{
+    width: 28%;
+    margin: 0 auto;
+    border: 1px solid silver;
+    padding: 10px;
+    margin-bottom: 2em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+article#mainPage .categories .item ul{
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style-type: square;
+}
+
+article#mainPage .categories .item ul li .price{
+    color: darkred;
+    font-size: 1.4em;
+}
+
+article#mainPage .categories .item .bottom{
+    text-align: center;
+    width: 100%;
+    padding: 0.7em;
+}
+
+article#mainPage .categories .item .bottom a{
+    padding: 0.7em;
+    text-decoration: none;
+    background: #003366;
+    color: white;
+    border-radius: 2px;
+    transition: all 0.4s;
+}
+
+article#mainPage .categories .item .bottom a:hover{
+    background: #480066;
+}
+
+article#mainPage .categories .item ul li{
+    margin-bottom: 0.5em;
+}
+
+article#mainPage .categories .item .inner{
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid #003366;
+    padding-bottom: 5px;
+}
+
+article#mainPage .categories .item .inner i{
+    display: table-cell;
+}
+
+article#mainPage .categories .item .inner h3{
+    display: table-cell;
+    text-align: center;
+}
+
+article#mainPage #kontakt-form {
+    width: 65%;
+    margin: 0 auto;
+}
+
+article#mainPage #kontakt-form table {
+    width: 100%;
+    border-spacing: 1em;
+    text-align: center;
+}
+
+article#mainPage #kontakt-form input:not([type="submit"]), textarea, select{
+    text-align: left;
+    padding: 6px 12px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+article#mainPage #kontakt-form textarea {
+    height: 15em;
+}
+
+article#mainPage #kontakt-form input[type="submit"]
+{
+    padding: 1em;
+    width: 7em;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #000000;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+article#mainPage #kontakt-form input[type="submit"]:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+div.facebook{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+}
+
+@media screen and (min-width: 1600px) {
+    header#header .cover .quote{
+        margin-top: 3.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header#header .cover .logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    header#header .cover .menu{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    header#header .cover .menu a{
+        line-height: 2.5em;
+    }
+
+    header#header .cover .quote{
+        display: block;
+        width: 95%;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    article#mainPage{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 1.5em;
+    }
+
+    article#mainPage .categories .item{
+        width: 90%;
+    }
+
+    article#mainPage .reference .item img{
+        width: 95%;
+    }
+
+    article#mainPage #kontakt-form {
+        width: 100%;
+    }
+
+    article#mainPage #kontakt-form table {
+        width: 98%;
+    }
+
+    article#mainPage .reference .item{
+        max-width: 99%;
+    }
+
+}

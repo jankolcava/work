@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../css/opensans.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../css/opensans-light.ttf');
+}
+
+@font-face {
+    font-family: 'Brusher';
+    src: url('../css/Brusher.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin:0;
+    font-family:'Open Sans', Arial, sans-serif;
+    color:#000;
+    height: 100%;
+    background:#fff;
+    font-smoothing:antialiased;
+}
+
+
+menu#mainLeftMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 100%;
+    color: #fff;
+    background: #222629;
+    box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+    display: table;
+}
+
+menu#mainLeftMenu .logo{
+    display: table-row;
+    vertical-align: top;
+}
+
+menu#mainLeftMenu .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+menu#mainLeftMenu .logo a h1{
+    font-family: 'Brusher', Arial, sans-serif;
+    letter-spacing: 5px;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+menu#mainLeftMenu .footer{
+    display: table-row;
+    vertical-align: bottom;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+menu#mainLeftMenu .footer .inner{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+menu#mainLeftMenu .footer .inner .icons{
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 0.5em;
+}
+
+menu#mainLeftMenu .footer .inner .icons a{
+    text-decoration: none;
+}
+
+menu#mainLeftMenu .footer .inner .icons a i{
+    font-size: 1.5em;
+    color: #666666; 
+    transition: color 0.4s;
+}
+
+menu#mainLeftMenu .footer .inner .icons a i:hover{
+    color: #ffffff;
+}
+
+menu#mainLeftMenu .menu{
+    display: table-row;
+    vertical-align: middle;
+}
+
+menu#mainLeftMenu .menu ul{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+menu#mainLeftMenu .menu ul li{
+    list-style-type: none;
+}
+
+menu#mainLeftMenu .menu ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+menu#mainLeftMenu .menu ul li a .fa{
+    color: #666666;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    margin-bottom: 0.25em;
+    transition: color 0.4s;
+}
+
+menu#mainLeftMenu .menu ul li a:hover > .fa{
+    color: #336699;
+}
+
+menu#mainLeftMenu .menu ul li a .fa.active{
+    color: #336699;
+}
+
+menu#mainLeftMenu .menu ul li a .fa .inside{
+    color: white;
+    display: inline;
+    float: right;
+    font-family: 'Open Sans Light';
+    font-size: 0.85em;
+}
+
+#mainRight{
+    position: relative;
+    margin-left: 340px;
+    min-height: 100vh;
+    background: url('../design/images/city_background.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 5;
+    display: block;
+}
+
+#mainRight .cover{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.80);
+    display: table;
+}
+
+#mainRight .cover .langSelect{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#mainRight .cover .inner{
+    display: table-row;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+}
+
+#mainRight .cover .inner h2{
+    font-size: 2.4em;
+    color: white;
+    font-family: 'Open Sans Light', Arial, sans-serif;
+    font-weight: normal;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#mainRight .cover .inner h2 .underline{
+    border-bottom: 1px dotted white;
+    transition: all 0.4s;
+}
+
+#mainRight .cover .inner h2 .underline:hover{
+    color: #336699;
+    border-bottom: 1px dotted #336699;
+    cursor: pointer;
+}
+
+#mainRight .cover .inner .searchInput{
+    margin-top: 1.5em;
+}
+
+#mainRight .cover .inner .searchInput .searchTop{
+    border: 1px solid white;
+    display: inline-block;
+    background: white;
+}
+
+#mainRight .cover .inner .searchInput .searchTop input{
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid white;
+}
+
+#mainRight .cover .inner .searchInput .searchTop input:focus{
+    outline: 0;
+}
+
+#mainRight .cover .inner .searchInput .searchTop .fa{
+    color: #336699;
+    font-size: 1.4em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+#mainRight .cover .inner .searchInput .searchTop .fa.fa-microphone{
+    color: black;
+    transition: color 0.4s;
+}
+
+#mainRight .cover .inner .searchInput .searchTop .fa.fa-microphone:hover, #mainRight .cover .inner .searchInput .searchTop .fa.fa-microphone.enabled{
+    color: #336699;
+    cursor: pointer;
+}
+
+#mainRight .cover .inner .searchInput #searchBox{
+    color: white;
+    max-width: 80%;
+    width: 80%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    margin-top: 1.5em;
+    text-align: left;
+}
+
+#mainRight .cover .inner .searchInput #searchBox hr{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .searchInputTitle{
+    font-weight: normal;
+    font-size: 1.3em;
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .rightSort{
+    float: right;
+    margin-bottom: 10px;
+}
+
+
+#mainRight .cover .inner .searchInput #searchBox .results{
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem{
+    border: 1px solid white;
+    margin-bottom: 1em;
+    padding: 10px;
+    width: 95%;
+    display: inline-block;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .topItemContent{
+    margin-bottom: 1em;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .topItemContent h3{
+    text-align: center;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .middleItemContent{
+    float: left;
+    width: 100%;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .middleItemContent .frontImage{
+    float: left;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .middleItemContent .descriptionMiddle{
+    overflow: auto;
+    padding-left: 1em;
+    text-align: left;
+    margin-bottom: 0.7em;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .middleItemContent .reviewMiddle{
+    overflow: auto;
+    padding-left: 1em;
+    text-align: left;
+    margin-bottom: 0.7em;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .ratingPanel{
+    float: right;
+}
+
+#mainRight .cover .inner .searchInput #searchBox .results .resultItem .ratingPanel .fa.fa-star{
+    letter-spacing: 5px;
+}
+
+#mainRight .cover .inner .textInside{
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    margin-top: 1em;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+#mainRight .cover .inner .textInside .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainRight .cover .inner .textInside .flex a{
+    width: 50%;
+    text-align: center;
+    margin-top: 1em;
+    color: white;
+    transition: color 0.4s;
+}
+
+#mainRight .cover .inner .textInside .flex a:hover{
+    color: #336699;
+}
+
+#visibilityContainer{
+    background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    display: none;
+}
+
+#visibilityContainer .mainContent{
+    background: white;
+    width: 50%;
+    max-height: 90%;
+    height: 90%;
+    position: relative;
+    top: 50%;
+    padding: 10px;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#visibilityContainer .mainContent .mainWrap{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#visibilityContainer .mainContent .mainWrap .topContent{
+    display: table-row;
+    vertical-align: top;
+}
+
+#visibilityContainer .mainContent .mainWrap .topContent .closeButton{
+    width: 1%;
+    padding-top: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+    display: table-cell;
+}
+
+#visibilityContainer .mainContent .mainWrap .topContent .paragraph{
+    display: table-cell;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+#visibilityContainer .mainContent .mainWrap .topContent .paragraph i{
+    
+}
+
+#visibilityContainer .mainContent .mainWrap .topContent .paragraph h2{
+    text-align: center;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent{
+    display: table-row;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent .mapWrapper{
+    width: 100%;
+    height: 450px;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent .mapWrapper .map{
+    width: 95%;
+    margin: 0 auto;
+    height: 95%;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent table{
+    margin: 0 auto;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent table input[type="text"]{
+    border: 1px solid silver;
+    padding: 5px;
+    width: 100%;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent table textarea{
+    height: 8em;
+    width: 150%;
+    border: 1px solid silver;
+    padding: 5px;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent table tr td{
+    padding-right: 1em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent table .categories{
+    position: relative;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent table .categories .addNewCategory{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent table .categoryNamePlaceHolder{
+    text-align: center;
+    display: none;
+    color: grey;
+    outline: 0;
+    border: 0;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent .stars{
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+#visibilityContainer .mainContent .mainWrap .middleContent .stars i{
+    padding-left: 0.5em;
+    cursor: pointer;
+}
+
+#visibilityContainer .mainContent .mainWrap .bottomContent{
+    display: table-row;
+    vertical-align: bottom;
+}
+
+#visibilityContainer .mainContent .mainWrap .bottomContent .buttons{
+    margin: 1em;
+}
+
+#visibilityContainer .mainContent .mainWrap .bottomContent .buttons a{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    background: rgba(0, 0, 0, 0.90);
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background 0.4s;
+}
+
+#visibilityContainer .mainContent .mainWrap .bottomContent .buttons a:hover{
+    background: rgba(0, 0, 0, 0.70);
+}
+
+@media screen and (min-width: 1600px) {
+    menu#mainLeftMenu{
+        width: 450px;
+    }
+
+    #mainRight{
+        margin-left: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    menu#mainLeftMenu{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: inherit;
+    }
+
+    menu#mainLeftMenu .logo{
+        display: block;
+    }
+
+    menu#mainLeftMenu .menu{
+        display: block;
+    }
+
+    menu#mainLeftMenu .footer{
+        display: block;
+    }
+
+    menu#mainLeftMenu .footer .inner .icons{
+        margin-bottom: 0px;
+    }
+
+    #mainRight{
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+    }
+
+    #visibilityContainer .mainContent{
+        width: 95%;
+    }
+
+    #visibilityContainer .mainContent .middleContent table textarea{
+        width: 100%;
+    }
+
+    #mainRight .cover .inner .searchInput #searchBox{
+        max-width: 95%;
+        width: 95%;
+    }
+
+    #mainRight .cover .inner .searchInput #searchBox .results .resultItem .middleItemContent .frontImage{
+        float: initial;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    #mainRight .cover .inner .searchInput #searchBox .searchInputTitle{
+        width: 100%;
+    }
+
+    #mainRight .cover .inner .searchInput #searchBox .rightSort{
+        width: 100%;
+    }
+
+}

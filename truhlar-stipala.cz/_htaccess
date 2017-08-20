@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^truhlar-stipala.cz$
+RewriteRule (.*) http://www.truhlar-stipala.cz/$1 [R=301,L]

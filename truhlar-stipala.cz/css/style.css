@@ -1,0 +1,451 @@
+@font-face {
+    font-family: 'Vivaldi';
+    src: url(fonts/vivaldi.eot);
+}
+
+@font-face {
+    font-family: 'Hanford';
+    src: url(fonts/hanford.ttf);
+}
+
+* { 
+    margin: 0; 
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+   font-family: 'Segoe UI', 'Open Sans', Helvetica, sans-serif;
+   font-size: 15px;
+}
+
+/*////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////*/
+
+#page {
+	background-color: white;
+
+	width: 100%;
+	height: auto;
+
+	margin: 0 auto;
+}
+
+#wrapper {
+	width: 65%;
+	margin: 0 auto;
+
+	min-width: 650px;
+	max-width: 1024px;
+}
+
+.wrapper {
+	max-width: 960px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+	margin-top: 20px;
+	height: 100%;
+}
+
+/*////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////*/
+
+
+/*Top-Line*/
+/*////////////////////////////////////////////////////////*/
+
+#top-line {
+	height: 4px;
+	background-color: #3A1C0A;
+}
+
+
+/*Header*/
+/*////////////////////////////////////////////////////////*/
+
+header {
+	margin-top: 20px;
+}
+
+#header-frame {
+	text-align: center;
+	position: relative;
+}
+
+.logo-img > img {
+	height: 250px;
+}
+
+
+/*Slider*/
+/*////////////////////////////////////////////////////////*/
+
+#main-slider {
+	height: 280px;
+	margin-top: 30px;
+
+	box-shadow: 2px 2px 20px black;
+}
+
+#intro-frame > img {
+	margin-top: 40px;
+
+	width: 100%;
+	height: 300px;
+
+	background-size: cover;
+	box-shadow: 2px 2px 20px black;
+}
+
+
+/*Navigation*/
+/*////////////////////////////////////////////////////////*/
+
+nav {
+	margin-top: 15px;
+	width: 100%;
+	background-color: #3A1C0A;
+}
+
+nav ul {
+	list-style-type: none;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+nav a {
+	display: block;
+
+	color: #E7D0C3;
+
+	text-decoration: none;
+
+	line-height: 2em;
+
+	font-size: 1.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	-webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+nav a:hover {
+	color: #3A1C0A;
+	background-color: #E7D0C3;
+}
+/*////////////////////////////////////////////////////////*/
+
+
+/*Clanek*/
+/*////////////////////////////////////////////////////////*/
+
+.clanek {
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+	padding: 35px 5px;
+
+	color: #261003;
+	border-radius: 10px;
+
+	position: relative;
+}
+
+.clanek h2, h3 {
+	color: #3A1C0A;
+}
+
+.clanek a, strong {
+	color: #9D603B;
+}
+
+.clanek a:hover {
+	color: #261003;
+}
+
+
+.vsuvka {
+	color: #3A1C0A;
+	font-style: italic;
+	font-family: 'Regular';
+	font-size: 19px;
+}
+
+.clanek .name {
+	
+	margin: 15px;
+	font-family: 'Hanford';
+	font-style: italic;
+	font-size: 32px;
+}
+
+.clanek h2 {
+	margin-top: 15px;
+	margin-bottom: 7px;
+	margin-left: 5px;
+	font-style: italic;
+}
+
+.clanek h3 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+.clanek > p {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 12px;
+	font-size: 17px;
+}
+
+.clanek > hr {
+	border-color: #3A1C0A;
+	border-radius: 1px;
+	margin-bottom: 20px;
+}
+
+.clanek > ul {
+	margin-left: 55px;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+
+/*Gallery*/
+/*////////////////////////////////////////////////////////*/
+
+#gallery-content { display: none; }
+
+.clanek .gallery {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+
+.gallery ul { list-style-type: none; }
+
+.gallery li { 
+	float: left;
+	margin: 10px;
+ }
+
+.gallery-category {
+	border: 1px solid silver;
+	width: 200px;
+	height: 250px;
+}
+
+.gallery-category > p {
+	margin-top: 8px;
+	text-align: center;
+}
+
+.in-image { 
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+.in-image::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background-color: rgba(255, 255, 255, 0);
+	-webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+.in-image:hover::before {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.in-image img {
+	width: 100%;
+	height: 100%;
+}
+
+#gallery-content .in-image {
+	border: 1px solid black;
+}
+
+#galleryBack {
+	text-align: right;
+	margin-right: 20px;
+}
+
+.galleryHeader {
+	text-align: center;
+	width: 50%;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*////////////////////////////////////////////////////////*/
+
+
+/*Footer*/
+/*////////////////////////////////////////////////////////*/
+footer {
+	min-height: 120px;
+	background-color: #261003;
+}
+
+#footer-frame  {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	color: #CFAA95;
+	font-weight: 300;
+	font-size: 15px;
+	
+}
+
+#footer-frame p {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	
+	vertical-align: middle;
+}
+
+#footer-frame a {
+	color: #CFAA95;
+	text-decoration: none;
+}
+
+#footer-frame a:hover {
+	color: #A84400;
+}
+
+#footer-frame .name {
+	font-size: 16px;
+}
+
+
+#footer-frame #developers {
+	float: left;
+}
+
+#footer-frame #fast-contact {
+	float: right;
+}
+
+/*////////////////////////////////////////////////////////*/
+
+/*Icons*/
+/*////////////////////////////////////////////////////////*/
+.icons {
+	position: fixed;
+	top: 45%;
+	right: 0px;
+	background-color: white;
+}
+
+.icon {
+	width: 35px;
+	height: 35px;
+	display: block;
+	margin: 5px;
+}
+
+#fb-icon {
+	background: url("../design/icons/fb-icon.png") no-repeat;
+	background-size: 35px;
+}
+
+#email-icon {
+	background: url("../design/icons/email-icon.png") no-repeat;
+	background-size: 35px;
+}
+
+.icon a {display: block; width: 100%; height: 100%;}
+
+.home {
+	display: block;
+	background: url("../design/icons/home.png") no-repeat;
+	background-size: cover;
+
+	width: 35px;
+	height: 35px;
+}
+
+/*Helpers*/
+/*////////////////////////////////////////////////////////*/
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+/*Media*/
+/*////////////////////////////////////////////////////////*/
+
+/*>>javascript*/
+
+@media only screen and (max-width: 700px) {
+
+
+	nav li {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	#footer-frame p {
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	#footer-frame .name {
+		margin-top: 5px;
+	}
+	.wrapper{
+		width: 100%;
+	}
+
+	#intro-frame > img {
+		height: 200px;
+	}
+}

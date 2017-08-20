@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../design/fonts/Lato/Lato-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    font-smoothing: antialiased;
+    height: 100%;
+}
+
+#page{
+    width: 100%;
+    min-height: 100%;
+}
+
+#page .intro{
+	background: url('../design/images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 100vh;
+	display: flex;
+}
+
+#page .intro .shadowIntro{
+	flex: 1;
+	background: rgba(0, 0, 0, .7);
+	display: flex;
+	flex-direction: column;
+}
+
+#page .intro .shadowIntro .topPane{
+	display: flex;
+
+}
+
+#page .intro .shadowIntro .topPane .left{
+
+}
+
+#page .intro .shadowIntro .topPane .right{
+	flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#page .intro .shadowIntro .topPane .right .menu{
+	text-align: right;
+	width: 100%;
+}
+
+#page .intro .shadowIntro .topPane .right .menu a{
+	color: white;
+	text-decoration: none;
+	position: relative;
+	margin-right: 1em;
+	transition: color .5s;
+}
+
+#page .intro .shadowIntro .topPane .right .menu a:hover{
+	color: #b06f25;
+}
+
+#page .intro .shadowIntro .topPane .left .logo{
+
+}
+
+#page .intro .shadowIntro .topPane .left .logo img{
+	width: 20%;
+	padding-top: 1em;
+    padding-left: 1em;
+}
+
+#page .intro .shadowIntro .middlePane{
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+#page .intro .shadowIntro .middlePane .center{
+	width: 100%;
+}
+
+#page .intro .shadowIntro .middlePane .center h1{
+	color: white;
+	text-align: center;
+	font-family: 'Lato Light';
+	font-weight: normal;
+	font-size: 3em;
+}
+
+#page .intro .shadowIntro .middlePane .center h1 .marked{
+	border-bottom: 1px dotted darkred;
+}
+
+#page .intro .shadowIntro .bottomPane{
+	width: 100%;
+}
+
+#page .intro .shadowIntro .bottomPane .center{
+	width: 100%;
+	text-align: center;
+}
+
+#page .intro .shadowIntro .bottomPane .center a i{
+	font-size: 3em;
+    color: white;
+    transition: color .5s;
+}
+
+#page .intro .shadowIntro .bottomPane .center a i:hover{
+	color: #b06f25;
+}
+
+#page #secondPart{
+	min-height: 100vh;
+	width: 100%;
+	background: white;
+	display: flex;
+	align-items: center;
+}
+
+#page #secondPart .left{
+	flex: 1;
+}
+
+#page #secondPart .left h2{
+	color: #333;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 2em;
+    text-align: center;
+}
+
+#page #secondPart .right{
+	flex: 1;
+	border-left: 5px solid #eee;
+}
+
+#page #secondPart .right p{
+	padding-left: 1em;
+	padding-right: 1em;
+	color: #333;
+	font-size: 1.06em;
+    line-height: 1.6;
+}
+
+#page #secondPart .right footer{
+	display: block;
+    padding-left: 1em;
+    margin-top: .5em;
+    color: #777;
+}
+
+#page #secondPart .right footer::before{
+	content: '\2014 \00A0';
+}
+
+#page #thirdPart{
+	min-height: 100vh;
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#page #thirdPart .column{
+	width: 50%;
+	margin-bottom: -4px;
+}
+
+#page #thirdPart .column img{
+	width: 100%;
+}
+
+#page #fourthPart{
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+	background: url('../design/images/mailbox.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#page #fourthPart .centerShadow{
+	flex: 1;
+	background: rgba(0, 0, 0, .7);
+	display: flex;
+	align-items: center;
+	padding-bottom: 1.5em;
+}
+
+#page #fourthPart .centerShadow .contact{
+	margin: 0 auto;
+	width: 65%;
+}
+
+#page #fourthPart .centerShadow .contact h2{
+	font-size: 3em;
+    color: white;
+    font-family: 'Lato Light';
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+#page #fourthPart .centerShadow .contact table{
+	width: 100%;
+    text-align: center;
+}
+
+#page #fourthPart .centerShadow .contact table tr td{
+	padding-top: 1em;
+}
+
+#page #fourthPart .centerShadow .contact table .text{
+	width: 100%;
+	border: 2px solid #54247C;
+    border-radius: 4px;
+    color: #333;
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+#page #fourthPart .centerShadow .contact table button{
+	text-transform: uppercase;
+	background: transparent;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+	transition: background .5s;
+}
+
+#page #fourthPart .centerShadow .contact table button:focus{
+	outline: 0;
+}
